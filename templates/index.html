@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        <div class="input-group">
+            <input type="text" id="video-url" placeholder="Enter YouTube Video URL" required>
+            <button id="get-info">Get Video Info</button>
+        </div>
+        <div id="video-info" style="display:none;">
+            <h2>Available Formats:</h2>
+            <select id="format-select"></select>
+            <button id="download-video">Download Video</button>
+        </div>
+        <div id="error-message" style="color: red;"></div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
